@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="536.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.robot1.LoginController">
+    <children>
+        <ImageView fitHeight="536.0" fitWidth="596.0" pickOnBounds="true">
+            <image>
+                <Image url="@robotic_vaccum_cleaner.gif" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="536.0" fitWidth="596.0" layoutX="-1.0" opacity="0.6" pickOnBounds="true">
+            <image>
+                <Image url="@images.jpeg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="USER_NAME" layoutX="245.0" layoutY="170.0" promptText="USERNAME" />
+        <Button fx:id="login_button" layoutX="278.0" layoutY="278.0" mnemonicParsing="false" onAction="#login_funtion" style="-fx-background-color: #D2B48C;" text="LOG IN" textFill="#201d1d">
+         <font>
+            <Font name="Arial Black" size="11.0" />
+         </font></Button>
+        <Text fill="#f2f0f0" layoutX="201.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User?">
+            <font>
+                <Font name="Arial Black" size="14.0" />
+            </font>
+        </Text>
+      <Label layoutX="271.0" layoutY="100.0" prefHeight="32.0" prefWidth="90.0" text="LOGIN" textFill="TAN">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="register_button" layoutX="320.0" layoutY="352.0" mnemonicParsing="false" onAction="#register_function" style="-fx-background-color: #D2B48C;" text="Register">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="PASSWORD" layoutX="245.0" layoutY="223.0" promptText="PASSWORD" />
+    </children>
+</AnchorPane>
